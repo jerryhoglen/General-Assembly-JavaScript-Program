@@ -1,3 +1,6 @@
+
+// For loops
+
 var sum = 0;
 
 for(var i = 0; i < 1000; i++) {
@@ -8,11 +11,14 @@ for(var i = 0; i < 1000; i++) {
 
 console.log("The sum is: ", sum);
 
+
+// Functions 
+ 
  var sum2 = 0;
  var number = 0;
- while(n < 1000) {
- 	sum2 += validSum(n);
- 	n++;
+ while(number < 1000) {
+ 	sum2 += validSum(number);
+ 	number++;
  }
 
 function isValid(number) {
@@ -32,4 +38,18 @@ function validSum(number) {
 }
 
 console.log("The sum2 is: ", sum2);
+
+// Arrays Fibonacci sequence
+
+var sequence = [ 1, 2 ];
+var nextNumber;
+var i = 1;
+do {
+	nextNumber = sequence[i] + sequence[i - 1];
+	console.log("Number is:", nextNumber)
+	sequence.push(nextNumber);
+	i++
+} while(nextNumber < 4000000);
+
+
 
