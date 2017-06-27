@@ -24,7 +24,7 @@ $(function() {
                 $('.techcrunch-content').append("<h5>Author:</h5>" + articlesAuthor + "<br>");
 
                 var articlesDescription = response.articles[i].description;
-                $('.techcrunch-content').append("<h5>Description:</h5>" + articlesDescription + "<br>" + "<hr>");
+                $('.techcrunch-content').append("<h5>Description:</h5>" + articlesDescription + "<br>");
 
                 var articlesUrl = response.articles[i].url;
                 $('.techcrunch-content').append("<h5>Full Article:</h5>" + articlesUrl + "<br>" + "<hr>");
